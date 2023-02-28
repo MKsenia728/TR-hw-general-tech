@@ -1,0 +1,19 @@
+db.transactions.insertOne(
+{'account_sender':1010 1010 1010 1010,
+ 'id_sender_bank':123456,
+ 'account_recipient' : 1111 1111 1111 111,
+ 'id_recipient_bank':221122,
+ 'sum': 5000,
+ 'created_at': DateTime1,
+ 'completed_at': DataTime2,
+ 'description': 'For tickets'
+ 'canceled': false
+})
+
+1. Учет товара на складе:
+   поступление (товар) : insertOne(),
+   поступление (количество) : updateOne(),
+   списание : updateOne()
+2. Учет расхода пакета услуг мобильного тарифа:
+   insertMany(), updateOne()
+3. Учет рейтинга радиопередач
